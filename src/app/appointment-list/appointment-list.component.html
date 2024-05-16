@@ -1,0 +1,12 @@
+<div>
+  <input [(ngModel)]="appointmentTitle" type="text" placeholder="title" />
+  <input [(ngModel)]="appointmentDate" type="date" placeholder="date" />
+  <button (click)="addAppointment()">Add New Appointment</button>
+  <ul>
+    <li *ngFor="let appointment of appointments">
+      <p>title:{{ appointment.title }}</p>
+      <p>Time:{{ appointment.date | date : "dd.MM.yyyy" }}</p>
+      <button (click)="deleteAppointment(appointment.id)">Delete</button>
+    </li>
+  </ul>
+</div>

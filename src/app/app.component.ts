@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
+import { Appointment } from './models/appointment';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'angular-appointment-app';
-}
+export class AppComponent {}
